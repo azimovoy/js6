@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 15px;
+    height: 500px;
+    width: 100px;
+    box-shadow: 0 0 10px 0 gray;
+    border: 3px solid;
+}
+.buttons__two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 15px;
+    height: 500px;
+    width: 100px;
+    box-shadow: 0 0 10px 0 gray;
+    border: 3px solid;
+}
+.button__one{
+    background: red;
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+}
+.button__two{
+    background: blue;
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+}
+.button__three{
+    background: green;
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+}
+.button__four{
+    background: yellow;
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+}
+.body {
+    display: flex;
+    gap: 30px;
+}
+
+.button__five {
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+}
+.block {
+    border: 3px solid;
+    height: 240px;
+    width: 240px;
+}
+.blocks {
+    margin-top: 40px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+   
+}

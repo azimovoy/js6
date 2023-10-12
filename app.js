@@ -1,20 +1,45 @@
-let mass = [
-    
-]
+let btn = document.querySelectorAll('button');
+let btnTwo = document.querySelectorAll('.button');
+let body = document.querySelector('body');
+let block = document.querySelectorAll('.block');
 
-for (let i = 0; i < Infinity; i++){
-let comand = prompt('Введите команду add, del, stop'),
- arrAdd = comand.split(' ')
- if(arrAdd[0]== 'add'){
-    mass.push(arrAdd[1])
- } else if (arrAdd[0]== 'del') {
-    for (let x = 0; x < mass.length; x++) {
-       mass[x] == arrAdd[1] ? mass.splice(x,1) : ''
-        
-    }
- }else if(arrAdd[0]== 'stop') {
-    break
- }
- console.log(mass);
-}
+btn.forEach((item,i) =>{
+   item.addEventListener('click', () =>{
+
+      if (i == 0) {
+         body.style.background = 'red'
+      }else if (i == 1) {
+         body.style.background = 'blue'
+      }else if (i == 2) {
+         body.style.background = 'green'
+      }else if (i == 3) {
+         body.style.background = 'yellow'
+      }else if (i == 4){
+         body.style.background = 'white'
+      }
+      })
+   })
+   
+   btnTwo.forEach((el,x) =>{
+      el.addEventListener('click', () =>{
+        block.forEach((block) => {
+         if (x == 0) {
+            block.style.background = 'red'
+         }else if (x == 1) {
+            block.style.background = 'blue'
+         }else if (x == 2) {
+            block.style.background = 'green'
+         }else if (x == 3) {
+            block.style.background = 'yellow'
+         }else if(x == 4) {
+            block.style.background = 'white'
+         }
+         });
+      
+         })
+      })
+      
+
+
+
 
